@@ -103,3 +103,54 @@ int main()
 }
 
 //_________________________________________
+
+#include <stdio.h>
+int main(){
+	int i,j,m;
+	int a[5]={5,1,15,20,25};
+	i=++a[1];
+	j=a[1]++;
+	m=a[i++];
+	printf("%d %d %d",i,j,m);
+	return 0;
+
+}
+
+//____________________
+
+#include <stdio.h>
+int main(){
+	int a[6]={1,5,4,6,9,7};
+	for(int i=0;i<6;i++){
+		if (a[i]%2!=0){
+			printf("%d\n",a[i]);
+		}
+		else{
+			continue;
+		}
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
