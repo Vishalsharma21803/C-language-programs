@@ -12,9 +12,9 @@ int main()
         scanf("%d", &a[i]);
     }
 
-    for (int i = 0; i < n ; i++)
+    for (int i = 0; i < n-1 ; i++)
     {
-        for (int j = 0; j < n - i; j++)
+        for (int j = 0; j < n - i-1; j++)
         {
             if (a[j] > a[j + 1])
             {
@@ -35,3 +35,5 @@ int main()
     printf("\nmax is : %d", a[n - 1]);
     return 0;
 }
+
+
