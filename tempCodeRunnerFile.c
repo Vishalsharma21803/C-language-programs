@@ -1,22 +1,21 @@
 #include <stdio.h>
+struct student
+{
+    char *name;
+    int age;
+    float weight;
+    char *course;
+};
 
-int main(){
-    int hold;
-    int array[5]={21,36,11,45,23};
-    for(int i=0;i<5;i++){
-        for(int j=0;j<5-i-1;j++){
-            if(array[j]<array[j+1]){
-            hold=array[j];
-            array[j]=array[j+1];
-            array[j+1]=hold;
+int main()
+{
+    struct student myStudent;
+    myStudent.name = "Sara";
+    myStudent.age = 23;
+    myStudent.weight = 70.5;
+    myStudent.course = "CSE";
 
-        }
-        }
-        
-    }
-    for(int j=0;j<5;j++){
-        printf("%d |",array[j]);
+    printf("student name: %s, student age: %d, student weight: %f, student course: %s", myStudent.name, myStudent.age, myStudent.weight, myStudent.course);
 
-    }
     return 0;
 }
