@@ -1,14 +1,15 @@
+
 #include <stdio.h>
-struct student{
+union student{
     char name[20];
     int age;
     int mobile ;
     int regid;
     float cgpa;
 };
-void main()
-{
-    struct student st1;
+int main(){
+    union student st1;
+
     printf("Enter the name: ");
     scanf("%s",&st1.name);
     printf("Enter the age: ");
@@ -20,5 +21,6 @@ void main()
     printf("Enter the cgpa: ");
     scanf("%f",&st1.cgpa);
     printf("%s %d %d %f",st1.name,st1.age,st1.mobile,st1.cgpa);
-}
+    printf("The size of variable str1 is: %d",sizeof(st1));
 
+    }
