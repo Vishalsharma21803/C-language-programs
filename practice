@@ -1,3 +1,4 @@
+// finding prime numbers
 #include <stdio.h>
 void prime(){
     int n;
@@ -45,6 +46,19 @@ void main(){
     perfect();
 }
 
+
+//______________________________________________________
+// pointers  (*pointer_name  ---- memory address ; pointer_name  ---- memory address value )
+
+#include <stdio.h>
+int main(){
+    int *vishal,n=10;
+    vishal=&n;  //( we assigned the value of n to *vishal's memory location)
+    printf("%p\n",*vishal); //( we are printing the memory address of the *vishal)
+    printf("%d",*vishal);  //( we are printing the value stores at *vishal's memory location)
+
+    return 0;
+}
 
 
 
