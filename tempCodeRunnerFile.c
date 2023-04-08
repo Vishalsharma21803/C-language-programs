@@ -1,26 +1,16 @@
-
 #include <stdio.h>
-union student{
-    char name[20];
-    int age;
-    int mobile ;
-    int regid;
-    float cgpa;
-};
 int main(){
-    union student st1;
-
-    printf("Enter the name: ");
-    scanf("%s",&st1.name);
-    printf("Enter the age: ");
-    scanf("%d",&st1.age);
-    printf("Enter the mobile number: ");
-    scanf("%d",&st1.mobile);
-    printf("Enter the regid: ");
-    scanf("%d",&st1.regid);
-    printf("Enter the cgpa: ");
-    scanf("%f",&st1.cgpa);
-    printf("%s %d %d %f",st1.name,st1.age,st1.mobile,st1.cgpa);
-    printf("The size of variable str1 is: %d",sizeof(st1));
-
+    int myarray[]={5,3,9,7,6};
+    int *samyak=myarray;  //( we do not use '&' for assigning array to pointer)
+    printf("%p\n",*samyak);  //( we are printing the memory address of myarray)
+    printf("%d\n",*samyak);  //( we are printing the value stores at myarray[0]  default case)
+    printf("%d\n",*(samyak+1));  //( we are printing the value stores at myarray[0+1]== myarray[1])
+    printf("%d\n",*(samyak+2));  //( we are printing the value stores at myarray[0+2]== myarray[2])
+    
+    //(we will use for loop to print all the values of array using pointer name)
+    for(int i=0;i<5;i++){
+        printf("%d | ",*(samyak + i));
     }
+
+    return 0;
+}
