@@ -1,9 +1,13 @@
 #include <stdio.h>
 int main(){
-    int var1=60,var2=70;
-    int *const ptr=&var1;
-    printf("\n%d",*ptr);
-    ptr=&var2;  // invalid errot will rise
-    printf("\n%d",*ptr);
+    int *ptr;
+    {
+        int var=23;
+        ptr=&var;
+        printf("\n%d",*ptr); // 23 is printed
+        printf("\n%u",ptr); // address of var is printed
+
+    }
+    printf("\n%u",ptr); // same address is printed, even var is destroyed, hence ptr is dangling pointer
     return 0;
 }
