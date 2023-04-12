@@ -1,10 +1,10 @@
-
 #include <stdio.h>
 int main(){
-    int *ptr,n=10;
-    ptr=&n;
-    printf("%u",ptr); //(address of pointer is converted into integer then giving output)
-    printf("\n%d",*ptr);
+    int *ptr;  // wild pointer
+    int a=10;
+    printf("%u", ptr);  // gives garbage value address
+    printf("\n%d",*ptr);  // gives gaarbage value stored in the garbage address
+    ptr=&a;
+    printf("\n%d",*ptr);  // now ptr is not a wild pointer
     return 0;
-
 }
