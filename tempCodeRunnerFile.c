@@ -1,10 +1,12 @@
 #include <stdio.h>
 int main(){
-    int *ptr;  // wild pointer
-    int a=10;
-    printf("%u", ptr);  // gives garbage value address
-    printf("\n%d",*ptr);  // gives gaarbage value stored in the garbage address
-    ptr=&a;
-    printf("\n%d",*ptr);  // now ptr is not a wild pointer
+    int x=10;
+    char ch='A';
+    void *gp;
+    gp=&x;
+    printf("\nGeneric pointer points to the integer value = %d",*(int*)gp);
+    gp=&ch;
+    printf("\nGeneric pointer points to the character value = %c",*(char*)gp);
     return 0;
+
 }
