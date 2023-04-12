@@ -26,3 +26,22 @@ int main(){
 }
 
 //________________________________________________________
+
+#include <stdio.h>
+int main(){
+    int *vishal=NULL;
+    int a=10;
+    printf("%u",vishal); // 0 will be displayed
+    printf("%d",*vishal);  // invalid, as vishal is still a NULL at this point
+    vishal=&a;
+    printf("\n%d",*vishal);  // now it is allowed , as NULL pointer has some value
+    return 0;
+}
+
+//____________________________________________________________
+
+
+
+
+
+
