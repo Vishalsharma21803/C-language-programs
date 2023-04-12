@@ -1,12 +1,9 @@
 #include <stdio.h>
 int main(){
-    int x=10;
-    char ch='A';
-    void *gp;
-    gp=&x;
-    printf("\nGeneric pointer points to the integer value = %d",*(int*)gp);
-    gp=&ch;
-    printf("\nGeneric pointer points to the character value = %c",*(char*)gp);
+    int var1=60,var2=70;
+    int *constant ptr=&var1;
+    printf("\n%d",*ptr);
+    ptr=&var2;  // invalid errot will rise
+    printf("\n%d",*ptr);
     return 0;
-
 }
