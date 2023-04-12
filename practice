@@ -54,7 +54,7 @@ void main(){
 int main(){
     int *vishal,n=10;
     vishal=&n;  //( we assigned the value of n to *vishal's memory location)
-    printf("%p\n",*vishal); //( we are printing the memory address of the *vishal)
+    printf("%p\n",vishal); //( we are printing the memory address of the *vishal,.... we can also use %u in place of %p both are same)
     printf("%d",*vishal);  //( we are printing the value stores at *vishal's memory location)
 
     return 0;
