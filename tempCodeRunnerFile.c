@@ -1,17 +1,12 @@
 #include <stdio.h>
-int main()
-{
-    FILE *file; // FILE - datatype     file - variable
-    if (file = fopen("hello.txt", "a"))
-    {
-        if (fputs("he was a great personality.....", file) >= 0)
-        {
-            printf("file opened successfully in append mode and new content has been added to the old content");
-        }
+int main(){
+    FILE *file;
+    if (file = fopen("hello.txt","r+")){
+        printf("file opened successfully in read and write mode both");
+
     }
-    else
-    {
-        printf("Error!");
+    else{
+        printf("this file is not present");
     }
     fclose(file);
     return 0;
