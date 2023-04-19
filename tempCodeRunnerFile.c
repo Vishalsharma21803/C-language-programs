@@ -1,16 +1,16 @@
+// file handling
+
 #include <stdio.h>
-int main()
-{
-int a[] = {1, 2, 3, 4};
-int *p1 = a, i;
-int *p2 = &a[2];
-p2--;
-*(p2 - 1) = 90;
-p1 = p2;
-*p1 = 100;
-for (i = 0; i < 4; i++)
-{
-printf("%d\n", a[i]);
-}
-return 0;
+int main(){
+    FILE *file;
+    if (file = fopen("hello.txt","w")){
+        if (fputs("SWAMI Vivekananda.....",file)>=0)
+        printf("File is successfully in write mode");
+    }
+    else{
+        printf("Error!");
+    }
+        fclose(file);
+        return 0
+    
 }
