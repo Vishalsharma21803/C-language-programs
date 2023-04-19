@@ -1,33 +1,61 @@
 // file handling
 
 #include <stdio.h>
-int main(){
-    FILE *file;  // FILE - datatype     file - variable
-    if (file = fopen("hello.txt","w")){
-        if (fputs("SWAMI Vivekananda.....",file)>=0)
-        printf("File is successfully in write mode");
+int main()
+{
+    FILE *file; // FILE - datatype     file - variable
+    if (file = fopen("hello.txt", "w"))
+    {
+        if (fputs("SWAMI Vivekananda.....", file) >= 0)
+            printf("File is successfully in write mode");
     }
-    else{
+    else
+    {
         printf("Error!");
     }
-        fclose(file);
-        return 0;
-    
+    fclose(file);
+    return 0;
 }
 
 //________________________________________________________________
 
 #include <stdio.h>
-int main(){
-    FILE *file;  // FILE - datatype     file - variable
-    if (file = fopen("vishal.txt","r")){
+int main()
+{
+    FILE *file; // FILE - datatype     file - variable
+    if (file = fopen("vishal.txt", "r"))
+    {
         printf("file opened successfully in read mode");
-}
-else{
-    printf("the file is not present");
+    }
+    else
+    {
+        printf("the file is not present");
     }
     fclose(file);
     return 0;
-    }
+}
 
 //______________________________________________________________
+
+// append mode
+
+#include <stdio.h>
+int main()
+{
+    FILE *file; // FILE - datatype     file - variable
+    if (file = fopen("hello.txt", "a"))
+    {
+        if (fputs("he was a great personality.....", file) >= 0)
+        {
+            printf("file opened successfully in append mode and new content has been added to the old content");
+        }
+    }
+    else
+    {
+        printf("Error!");
+    }
+    fclose(file);
+    return 0;
+}
+
+//_____________________________________________________________________
