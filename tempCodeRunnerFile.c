@@ -11,6 +11,6 @@ int main(){
         printf("Error!");
     }
         fclose(file);
-        return 0
+        return 0;
     
 }
