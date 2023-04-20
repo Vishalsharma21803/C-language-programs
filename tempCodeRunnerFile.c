@@ -1,36 +1,8 @@
 #include <stdio.h>
-int main()
-{
-struct student
-{
-int id;
-char name[20];
-double mob;
-} s1, s2;
-
-FILE *ptr;
-ptr = fopen("FileHandling02.bin", "wb+");
-if (ptr == NULL)
-{
-printf("File not found");
-}
-else
-{
-printf("File created..");
-printf("\nEnter id : ");
-scanf("%d", &s1.id);
-printf("Enter name : ");
-scanf("%s", s1.name);
-printf("Enter mob : ");
-scanf("%lf", &s1.mob);
-
-fwrite(&s1, sizeof(s1), 1, ptr);
-fseek(ptr, 0, SEEK_SET);
-fread(&s2, sizeof(s2), 1, ptr);
-printf("\n\nYour input :");
-printf("\nID: %d \nName: %s \nMobile Number: %.2lf", s2.id, s2.name, s2.mob);
-fclose(ptr);
-printf("\n\nFile saved..");
-}
-return 0;
+void main(){
+    char carname[20]; 
+    printf("Enter the name of the car: ");
+    scanf("%s", carname);
+    printf("The name of the car is %s", carname);
+    
 }
