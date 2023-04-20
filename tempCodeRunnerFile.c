@@ -1,17 +1,19 @@
-
 #include <stdio.h>
-#include <conio.h>
 int main()
 {
-FILE *file;
-char str;
-if (file = fopen("hello.txt", "r"))
-{
-while ((str = fgetc(file)) != EOF)
-{
-printf("%c", str);
-}
-}
-fclose(file);
-return 0;
+    FILE *fp;
+    fp = fopen("hello.txt", "r");
+    if (!fp)
+    {
+        printf("Error...!!!");
+        return 0;
+    }
+    fseek(fp, 6, 0);
+    char ch;
+    while (fread(&ch, sizeof(ch), 1, fp) == 1)
+    {
+        printf("%c", ch);
+    }
+    fclose(fp);
+    return 0;
 }
