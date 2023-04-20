@@ -1,19 +1,10 @@
 #include <stdio.h>
-int main()
-{
-    FILE *fp;
-    fp = fopen("hello.txt", "r");
-    if (!fp)
-    {
-        printf("Error...!!!");
-        return 0;
+int main(){
+    FILE *file;
+    if (file =fopen("hello.txt","w")){
+        if(fprintf(file, "he was the best of the best personalities.........")>=0)
+        printf("weite operation successfull");
     }
-    fseek(fp, 6, 0);
-    char ch;
-    while (fread(&ch, sizeof(ch), 1, fp) == 1)
-    {
-        printf("%c", ch);
-    }
-    fclose(fp);
+    fclose(file);
     return 0;
 }
