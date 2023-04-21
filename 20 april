@@ -74,7 +74,7 @@ scanf("%lf", &s1.mob);
 
 fwrite(&s1, sizeof(s1), 1, ptr);
 fseek(ptr, 0, SEEK_SET);
-fread(&s2, sizeof(s2), 1, ptr);
+fread(&s2, sizeof(s2), 1, ptr);<
 printf("\n\nYour input :");
 printf("\nID: %d \nName: %s \nMobile Number: %.2lf", s2.id, s2.name, s2.mob);
 fclose(ptr);
@@ -84,3 +84,15 @@ return 0;
 }
 
 //_____________________________________________________
+
+
+#include <stdio.h>
+void main(){
+    char carname[20]; 
+    printf("Enter the name of the car: ");
+    scanf("%s", carname);
+    printf("The name of the car is %s", carname);
+
+}
+
+//____________________________________________________
