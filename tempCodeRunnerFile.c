@@ -7,11 +7,11 @@ int main(){
     gets(str1);
     printf("\nEnter destination string: ");
     gets(str2);
-    printf("Enter number of characters to copy in destination string: ");
+    printf("\nEnter number of characters to copy in destination string: ");
     scanf("%d",&n);
     strncpy(str2,str1,n);
-    printf("source string is: %s",str1);
-    printf("destination string is: %s",str2);
+    printf("\nsource string is: %s",str1);
+    printf("\ndestination string is: %s",str2);
     return 0;
   
 }
