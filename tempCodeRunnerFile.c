@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -12,7 +11,7 @@ int main(){
     if(x==0)
     printf("\nThe two strings are equal");
     else if(x<0)
-    printf("\nThe first string is smaller than the second");
+    printf("\nThe second string is greate than the first");
     else
     printf("\nThe first string is greater than the second");
     return 0;
