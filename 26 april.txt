@@ -10,3 +10,18 @@ int main(){
 }
 
 //__________________________________________________________
+
+// puts -- printf      gets --- scanf(to input full string)
+
+#include <stdio.h>
+void main(){
+    char name[100];
+    puts("\nEnter your name: ");
+    gets(name);  // name mein store karenge input ko
+
+    printf("\nstring is: ");
+    puts(name);  // to output constant string
+
+}
+
+//_______________________________________________________________
