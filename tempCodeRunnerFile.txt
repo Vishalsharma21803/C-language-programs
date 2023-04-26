@@ -1,11 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
-void main(){
-    char name[100];
-    puts("\nEnter your name: ");
-    gets(name);  // name mein store karenge input ko
-
-    printf("\nstring is: ");
-    puts(name);  // to output constant string
-
+int main(){
+    char ary[]="discovery channel";
+    printf("%s",ary);
+    return 0;
 }
