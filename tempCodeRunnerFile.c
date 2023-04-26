@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 int main(){
-    char str1[15],str2[15];
+    char str1[20],str2[20];
     printf("\nEnter first string: ");
     gets(str1);
     printf("\nEnter second string: ");
