@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -6,7 +7,7 @@ int main(){
     gets(str1);
     printf("\nEnter second string: ");
     gets(str2);
-    srecat(str1,str2);
+    strcat(str1,str2);
     printf("\nThe concatenation of the two strings is: %s",str1);
     return 0;
 }
