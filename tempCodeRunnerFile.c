@@ -2,8 +2,9 @@
 #include <string.h>
 int main(){
     char str[20];
-    printf("Enter the string: ");
+    printf("Enter the string in highercase: ");
     gets(str);
-    printf("the reversed string is: %s",strrev(str));
+    printf("the string in lowercase is: %s",strlwr(str));
     return 0;
+
 }
