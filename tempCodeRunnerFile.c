@@ -5,7 +5,7 @@
 #include <string.h>
 int main(){
     char str[20];
-    gets(str);
+    fgets(str);
     printf("the length of the function is: %d",strlen(str));
     return 0;
 
