@@ -43,3 +43,18 @@ int main(){
 
 //__________________________________________________________
 
+// strupr  --- to convert lowercase to uppercase (smaller letters to capital letters)
+
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char str[20];
+    printf("Enter the string in lowercase: ");
+    gets(str);
+    printf("the string in uppercase is: %s",strupr(str));
+    return 0;
+
+}
+
+//__________________________________________________________
+
