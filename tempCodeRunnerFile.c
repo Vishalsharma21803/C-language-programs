@@ -10,7 +10,8 @@ int main(){
     while (str1[i] != '\0')
     {
         str2[i]=str1[i]+32;
-        i++}
+        i++;
+        }
     printf("\nstr1: %s", str2);
     return 0;
 
