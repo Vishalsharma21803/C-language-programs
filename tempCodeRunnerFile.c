@@ -5,8 +5,9 @@
 #include <string.h>
 int main(){
     char str[20];
-    fgets(str);
-    printf("the length of the function is: %d",strlen(str));
+    printf("Enter the string: ");
+    gets(str);
+    printf("the length of the string is: %d",strlen(str));
     return 0;
 
 }
