@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -9,10 +10,10 @@ int main(){
     int i = 0;
     while (str1[i] != '\0')
     {
-        str2[i]=str1[i]+32;
+        str2[i]=str1[i]-32;
         i++;
         }
-    printf("\nstr1: %s", str2);
+    printf("\n lowercase to uppercase conversion: %s", str2);
     return 0;
 
 }
