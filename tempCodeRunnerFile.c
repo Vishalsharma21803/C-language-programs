@@ -1,17 +1,11 @@
 #include <stdio.h>
-int cubeByValue(int n); // prototype
-int main( void )
+void fn1(int a){
+     printf("%d",a);
+     return a*a;
+   }
+int main()
 {
-   int number = 6; // initialize number
-   printf("The original value of number is %d", number);
-   cubeByValue(number); // pass number by value
-   printf( "\nThe new value of number is %d\n", number );
-} // end main
-
-int cubeByValue( int n )                                            
-{                                                                   
-    //cube local variable n and return value
-    n=n*n;
-   printf("%d",n);
-   return 0;
+    int a=5;
+    fn1(a);
+    printf("%d",a);
 }
