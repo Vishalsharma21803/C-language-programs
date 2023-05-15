@@ -3,7 +3,7 @@ void show(int x,int y)
 {
     x=x+1;
     y=y+1;
-    printf(“%d,%d ",x,y);
+    printf("%d,%d ",x,y);
 }
 int main()
 {
@@ -11,6 +11,6 @@ int main()
     show(a,b);
     a=a+1;
     b=b+1;
-    printf(“%d,%d ",a,b);
+    printf("%d,%d ",a,b);
 }
 
