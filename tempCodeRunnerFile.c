@@ -10,6 +10,7 @@ int main( void )
 
 int cubeByValue( int n )                                            
 {                                                                   
-   return n+1; //cube local variable n and return value
+    //cube local variable n and return value
    printf("%d",n);
+   return 0;
 }
