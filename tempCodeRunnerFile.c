@@ -1,7 +1,7 @@
-#include <math.h>
-int main(){
-    int a=-50;
-    a=abs(a);
-    printf("%d",a);
-    return 0;
+#include<stdio.h>
+int main()
+{
+int a=7,b=5;
+printf("%d",a|b);
+return 0;
 }
