@@ -11,6 +11,7 @@ int main( void )
 int cubeByValue( int n )                                            
 {                                                                   
     //cube local variable n and return value
+    n=n*n;
    printf("%d",n);
    return 0;
 }
