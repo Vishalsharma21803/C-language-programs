@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-int a=123;
-printf("*%06d*",a);
+float a=123.569854;
+printf("*%3.3f*",a);
 return 0;
 }
