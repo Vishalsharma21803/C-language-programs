@@ -7,5 +7,5 @@ int main()
 {
     int a=5;
     fn1(a);
-    printf("%d",a);
+    printf("\n%d",a);
 }
