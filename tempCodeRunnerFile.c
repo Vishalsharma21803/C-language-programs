@@ -1,11 +1,10 @@
 #include <stdio.h>
-void fn1(int a){
-     printf("%d",a);
-     return a*a;
-   }
-int main()
-{
-    int a=5;
-    fn1(a);
-    printf("\n%d",a);
+void fun(int x){
+    x=30;
+}
+int main(){
+    int y=20;
+    fun(y);
+    printf("%d",y);
+    return 0;
 }
