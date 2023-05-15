@@ -1,15 +1,16 @@
 #include <stdio.h>
-int show();
-
-void main()
+void show(int x,int y)
 {
-    int a;
-    a=show();
-    printf("%d", a);
+    x=x+1;
+    y=y+1;
+    printf(“%d,%d ",x,y);
+}
+int main()
+{
+    int a=6,b=9;
+    show(a,b);
+    a=a+1;
+    b=b+1;
+    printf(“%d,%d ",a,b);
 }
 
-int show()
-{
-    return 15.5;
-    return 35;
-}
