@@ -10,5 +10,5 @@ int main( void )
 
 int cubeByValue( int n )                                            
 {                                                                   
-   return n*n*n; //cube local variable n and return value
+   return n+1; //cube local variable n and return value
 }
