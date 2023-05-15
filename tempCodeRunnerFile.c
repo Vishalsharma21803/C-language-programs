@@ -1,10 +1,15 @@
 #include <stdio.h>
-void fun(int x){
-    x=30;
+int show();
+
+void main()
+{
+    int a;
+    a=show();
+    printf("%d", a);
 }
-int main(){
-    int y=20;
-    fun(y);
-    printf("%d",y);
-    return 0;
+
+int show()
+{
+    return 15.5;
+    return 35;
 }
