@@ -1,15 +1,18 @@
 #include <stdio.h>
 #include <string.h>
 int main(){
-    char ori[20],dup[20];
-    char *z;
-    printf("\nEnter your name: ");
-    gets(ori);
-    printf("\nEnter your name again: ");
-    gets(dup);
-    strcpy(ori,dup); // original ki value ko overright kar kar rahe h duplicate ki value se. original ki value duplicate ki value ke same ho jayegi
-    printf("\nThe original string now is: %s",ori);
-    printf("\nThe duplicate string is: %s",dup);
-    // printf("\nThe value of z is: %s",z);
+    char str1[20],str2[20];
+    int x;
+    printf("\nEnter first string: ");
+    gets(str1);
+    printf("\nEnter second string: ");
+    gets(str2);
+    x=strcmp(str1,str2);  // comparing the two strings
+    if(x==0)
+    printf("\nThe two strings are equal");
+    else if(x<0)
+    printf("\nThe second string is greate than the first");
+    else
+    printf("\nThe first string is greater than the second");
     return 0;
 }
