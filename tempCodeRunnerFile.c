@@ -1,6 +1,5 @@
 #include <stdio.h>
-#define True 1
-#define False 0
+#define True -1
 int main()
 {
     int a[50], n, loc = True, key, beg, last, mid, i;
