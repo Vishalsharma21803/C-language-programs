@@ -1,95 +1,42 @@
-// finding prime numbers
 #include <stdio.h>
-void prime(){
-    int n;
-    printf("Enter number: ");
-    scanf("%d",&n);
-    int count=0;
-    for(int i=2;i<n;i++){
-        if(n%i==0){
-            count=count+1;
+int main()
+{
+    int a[50], n, loc = -1, key, beg, last, mid, i;
+    printf("\n Enter number of array elements:");
+    scanf("%d", &n);
+    printf("\n Enter array elements:");
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    beg = 0;
+    last = n - 1;
+    printf("Enter integer value to search in sorted array:");
+    scanf("%d", &key);
+    while (beg <= last) // Loop will run until unless only one element is not remaining
+    {
+        mid = (beg + last) / 2; // determine index of middle element
+        if (a[mid] == key)
+        {
+            loc = mid; // save the location of element.
+            break;
         }
+        else if (a[mid] > key) // Middle element is greater than key
+        {
+            last = mid - 1; // If middle element is greater than key, we need to search left subarray
+        }
+        else if (a[mid] < key) // Middle element is less than key
+        {
+            beg = mid + 1; // If middle element is less than key, we need to search right subarray
+        }                  // end of if else
+    }                      // end of while
+    if (loc != -1)
+    {
+        printf("element found at %d", loc + 1); // Location is exact position, not index
     }
-    if(count==0){
-        printf("%d  a prime number.",n);
+    else
+    {
+        printf("element not found");
     }
-    else{
-        printf("%d not  a prime number",n);
-    }
-
-
-}
-void main(){
-    prime();
-}
-
-//_________________________________________________
-// finding perfect square
-#include <stdio.h>
-#include <math.h>
-void perfect(){
-    int n;
-    printf("Enter number");
-    scanf("%d",&n);
-    int temp=sqrt(n);
-    temp=pow(temp,2);
-    if(temp==n){
-        printf("%d is a perfect square",n);
-    }
-    else{
-        printf("%d is not a perfect square",n);
-    }
-
-}
-
-void main(){
-    perfect();
-}
-
-
-//______________________________________________________
-// pointers  (*pointer_name  ---- memory address ; pointer_name  ---- memory address value )
-
-#include <stdio.h>
-int main(){
-    int *vishal,n=10;
-    vishal=&n;  //( we assigned the value of n to *vishal's memory location)
-    printf("%p\n",vishal); //( we are printing the memory address of the *vishal,.... we can also use %u in place of %p both are same)
-    printf("%d",*vishal);  //( we are printing the value stores at *vishal's memory location)
-
     return 0;
 }
-
-
-// pointers in array
-
-#include <stdio.h>
-int main(){
-    int myarray[]={5,3,9,7,6};
-    int *samyak=myarray;  //( we do not use '&' for assigning array to pointer)
-    printf("%p\n",*samyak);  //( we are printing the memory address of myarray)
-    printf("%d\n",*samyak);  //( we are printing the value stores at myarray[0]  default case)
-    printf("%d\n",*(samyak+1));  //( we are printing the value stores at myarray[0+1]== myarray[1])
-    printf("%d\n",*(samyak+2));  //( we are printing the value stores at myarray[0+2]== myarray[2])
-    
-    //(we will use for loop to print all the values of array using pointer name)
-    for(int i=0;i<5;i++){
-        printf("%d | ",*(samyak + i));
-    }
-
-    return 0;
-}
-
-//_____________________________________________
-
-
-
-
-
-
-
-
-
-
-
-
