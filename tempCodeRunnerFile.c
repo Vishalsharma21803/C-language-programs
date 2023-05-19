@@ -3,11 +3,11 @@
 
 
 int main(){
-    int i=1;
-    while(i<=5){
+    int i=3;
+    while(1){
         if(i==2)
         break;
         printf("%d",i);
-        i++;
+        i--;
     }
 }
