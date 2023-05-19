@@ -3,13 +3,11 @@
 
 
 int main(){
-    int ch=5;
-    switch(ch){
-        case 3:
-        printf("X");
-        case 1.2:
-        printf("Y");
-        case 6 :
-        printf("Z");
+    int i=1;
+    while(i<=5){
+        if(i==2)
+        break;
+        printf("%d",i);
+        i++;
     }
 }
