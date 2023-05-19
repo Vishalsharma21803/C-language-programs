@@ -1,12 +1,7 @@
 #include <stdio.h>
 int main()
 {
- int main()
- {
- int y = 10000;
- int y = 34;
- printf("Hello World! %d\n", y);
- return 0;
- }
+int n = 1;
+ printf("%d, %dn", 3*n, n++); 
 
 }
