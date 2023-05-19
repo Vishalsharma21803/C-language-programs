@@ -3,7 +3,7 @@
 
 
 int main(){
-    char c='Y';
+    char ch='Y';
     switch(ch){
         case'X':
         printf("X");
