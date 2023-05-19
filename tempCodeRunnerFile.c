@@ -1,9 +1,10 @@
+
 #include <stdio.h>
- int main()
-{
-char arr1[10]="LPU";
-char arr2[5];
-arr2== arr1;
-printf("%s",arr2);
+int main(){
+    int *ptr,n=10;
+    ptr=&n;
+    printf("%u",ptr); //(address of pointer is converted into integer then giving output)
+    printf("\n%d",*ptr);
+    return 0;
+
 }
- 
