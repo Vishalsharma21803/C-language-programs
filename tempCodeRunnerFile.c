@@ -2,6 +2,6 @@
 #include <string.h>
 int main(){
     char*str="hello, world\n";
-    printf("%d",strlrn(str));
+    printf("%d",strlen(str));
     return 0;
 }
