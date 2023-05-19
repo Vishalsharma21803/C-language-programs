@@ -3,7 +3,7 @@
 
 
 int main(){
-    int a=1,b=0,c=0;
+    int a=0,b=0,c=0;
     if(a||b||c)
     printf("a,b,c is true");
     else
