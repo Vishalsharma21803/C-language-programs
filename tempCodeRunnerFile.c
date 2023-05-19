@@ -7,7 +7,7 @@ int main(){
     while(1){
         if(i==1)
         break;
-        printf("%d",i);
+        printf("%d ",i);
         i--;
     }
 }
