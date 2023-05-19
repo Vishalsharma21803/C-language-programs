@@ -1,9 +1,11 @@
 #include<stdio.h>
 #include <string.h>
-void m(float *p){
-    printf("%f\n",*p);
-}
+
+
 int main(){
-    int i=10,*p=51;
-    m(51);
+    int a=1,b=2,c=3;
+    if(a||b||c)
+    printf("a,b,c is true");
+    else
+    printf("a,b,c is false");
 }
