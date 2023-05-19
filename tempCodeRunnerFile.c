@@ -5,5 +5,5 @@ void m(float *p){
 }
 int main(){
     int i=10,*p=51;
-    m();
+    m(51);
 }
