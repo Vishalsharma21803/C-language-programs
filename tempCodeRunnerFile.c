@@ -3,13 +3,13 @@
 
 
 int main(){
-    char ch='Y';
+    int ch=5;
     switch(ch){
-        case'X':
+        case 3:
         printf("X");
-        case'Y':
+        case 1.2:
         printf("Y");
-        case'Z':
+        case 6 :
         printf("Z");
     }
 }
