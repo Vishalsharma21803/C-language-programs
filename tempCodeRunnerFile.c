@@ -1,13 +1,8 @@
-#include<stdio.h>
-#include <string.h>
-
-
-int main(){
-    int i=3;
-    while(1){
-        if(i==1)
-        break;
-        printf("%d ",i);
-        i--;
-    }
-}
+#include <stdio.h>
+ int main()
+ {
+ signed char chr;
+ chr = 128;
+ printf("%d\n", chr);
+ return 0;
+ }
