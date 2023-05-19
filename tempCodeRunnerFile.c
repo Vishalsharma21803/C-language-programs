@@ -1,12 +1,12 @@
 #include <stdio.h>
-int main(){
-    int *pnum;
-    char *pchar;
-    float *pfloat;
-    long *plong;
-    printf("\n Size of the pointer = %d", sizeof(pnum));
-    printf("\n Size of the pointer = %d", sizeof(pchar));
-    printf("\n Size of the pointer = %d", sizeof(pfloat));
-    printf("\n Size of the pointer = %d", sizeof(plong));
-    return 0;
+int main()
+{
+ int main()
+ {
+ int y = 10000;
+ int y = 34;
+ printf("Hello World! %d\n", y);
+ return 0;
+ }
+
 }
