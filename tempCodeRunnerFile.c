@@ -1,7 +1,9 @@
 #include <stdio.h>
  void main()
  {
- int a = 3;
- int b = ++a + a++ + --a;
- printf("Value of b is %d", b);
+ float x;
+ int y;
+ printf("enter two numbers \n", x);
+ scanf("%f %f", &x, &y);
+ printf("%f, %d", x, y);
  }
