@@ -1,8 +1,7 @@
 #include <stdio.h>
- int main()
+ void main()
  {
- signed char chr;
- chr = 128;
- printf("%d\n", chr);
- return 0;
+ int a = 3;
+ int b = ++a + a++ + --a;
+ printf("Value of b is %d", b);
  }
