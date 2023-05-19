@@ -1,10 +1,12 @@
-
 #include <stdio.h>
 int main(){
-    int *ptr,n=10;
-    ptr=&n;
-    printf("%u",ptr); //(address of pointer is converted into integer then giving output)
-    printf("\n%d",*ptr);
+    int *pnum;
+    char *pchar;
+    float *pfloat;
+    long *plong;
+    printf("\n Size of the pointer = %d", sizeof(pnum));
+    printf("\n Size of the pointer = %d", sizeof(pchar));
+    printf("\n Size of the pointer = %d", sizeof(pfloat));
+    printf("\n Size of the pointer = %d", sizeof(plong));
     return 0;
-
 }
