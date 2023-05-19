@@ -1,7 +1,10 @@
 #include<stdio.h>
 #include <string.h>
 int main(){
-    char x='a';
-    printf("hello world %d\n",x);
+    int x=0;
+    if(x)
+    printf("hi");
+    else
+    printf("bye");
     return 0;
 }
