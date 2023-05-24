@@ -18,7 +18,7 @@ int main(){
     for(int k=0;k<n;k++){
         for(int l=0;l<n-k-1;l++){
             if(arr[l]<arr[l+1]){
-                temp=arr[i];
+                temp=arr[l];
                 arr[l]=arr[l+1];
                 arr[l+1]=temp;
             }
