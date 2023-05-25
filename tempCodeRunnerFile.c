@@ -4,7 +4,7 @@ int main(){
     while(i>0){
         printf("%d",i);
         i--;
-        printf("\nyes");
+        
     }
     printf("not");
     return 0;
