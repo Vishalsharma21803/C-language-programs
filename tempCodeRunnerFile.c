@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main(){
-    int i,n;
-    for(i=10;i<=0;i--){
-        printf("yes");
+    int i=10,n;
+    while(i<=0){
         printf("%d",i);
+        printf("yes");
     }
     printf("not");
     return 0;
