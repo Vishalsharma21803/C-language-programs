@@ -1,9 +1,10 @@
 #include <stdio.h>
 int main(){
     int i=10,n;
-    while(i<=0){
+    while(i>0){
         printf("%d",i);
-        printf("yes");
+        i--;
+        printf("\nyes");
     }
     printf("not");
     return 0;
