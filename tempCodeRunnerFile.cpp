@@ -5,18 +5,21 @@ int main(){
 	int count=0;
 	cout<<"enter a number: ";
 	cin>>x;
-	for(int i=0;i<x;i++){
+	for(int i=2;i<x;i++){
 		if (x%i==0){
 			count=count+1;
 		}
 		
 	}
-	if (count==0){
-		cout<<"prime number"<<endl;
+	if (x==0 || x==1){
+	    cout<<x<<" is a rational number"<<endl;
+	}
+	else if (count==0){
+		cout<<x<<" is prime number"<<endl;
 		
 	}
 	else{
-		cout<<"not a prime number"<<endl;
+		cout<<x<<" is not a prime number"<<endl;
 	}
 	
 	
